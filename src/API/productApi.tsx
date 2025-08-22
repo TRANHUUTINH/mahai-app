@@ -1,8 +1,7 @@
 import axios from "axios";
 import { ProductDTO, CreateProductDTO } from "../types/ProductDTO";
 
-const BASE_URL =
-  "https://mahai-app-service-production.up.railway.app/api/products";
+const BASE_URL = "https://elegant-trust-production.up.railway.app/api/products";
 
 export const fetchProducts = async (): Promise<ProductDTO[]> => {
   const res = await axios.get(BASE_URL);
